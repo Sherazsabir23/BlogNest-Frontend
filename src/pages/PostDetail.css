@@ -1,0 +1,44 @@
+/* PostDetail.css */
+
+.post-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: "Segoe UI", sans-serif;
+  
+}
+
+.post-detail-box h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.post-detail-box .meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.post-image{
+  width: 500px;
+  height: 500px;
+  
+    object-fit: cover;
+    object-position: top center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.post-detail-box .description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+  white-space: pre-wrap; /* Preserves whitespace and line breaks */
+  word-wrap: break-word;
+  font-family: "Segoe UI", sans-serif;
+}

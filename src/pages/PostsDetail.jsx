@@ -111,7 +111,7 @@ console.error("internal server error:",err)
         <div className="max-w-md text-white mt-4">
        {allcomment.map((comment, i) => (
   <div key={i} className="flex border bg-slate-900 rounded-lg g p-5 gap-4 mt-5 mb-4">
-    <img className="w-10 h-10 object-cover rounded-full" src={`http://localhost:3000/uploads/${comment.author.profileImage}`} alt="Author" />
+    <img className="w-10 h-10 object-cover rounded-full" src={`https://blognest-backend-production.up.railway.app/uploads/${comment.author.profileImage}`} alt="Author" />
     <div>
       <p className="font-semibold">{comment.author.name}</p>
       <p className="text-sm text-slate-400">{comment.content}</p>

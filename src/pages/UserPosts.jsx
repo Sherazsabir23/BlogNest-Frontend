@@ -74,7 +74,7 @@ function UserPosts() {
                 {/* Image */}
                 <img
                   className="w-full h-48 object-cover"
-                  src={`http://localhost:3000/uploads/${Post.image}`}
+                  src={`https://blognest-backend-production.up.railway.app/uploads/${Post.image}`}
                   alt={Post.title}
                 />
 

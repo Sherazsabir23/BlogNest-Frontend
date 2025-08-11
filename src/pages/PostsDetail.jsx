@@ -14,6 +14,7 @@ function PostDetail() {
   const [comment,setComment] = useState("");
   const [allcomment,setAllComment] = useState([]);
 
+
   const data={
     postId:id,
    content: comment,
@@ -41,6 +42,7 @@ console.error("internal server error:",err)
         const response = await posts.getPostById(id);
         if (response.success) {
           setPost(response.post);
+        console.log("Post Data is:",response.post);
         }
       } catch (err) {
         console.error("Error fetching post:", err);
@@ -94,7 +96,7 @@ console.error("internal server error:",err)
        
 
         <img
-          src={`http://localhost:3000/uploads/${post.image}`}
+          src={`https://blognest-backend-production.up.railway.app/uploads/${post.image}`}
           alt={post.title}
           className="post-image"
         />

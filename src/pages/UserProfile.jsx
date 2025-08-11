@@ -30,7 +30,7 @@ function UserProfile() {
   const handleImageClick = () => {
     setIsModalOpen(true);
     const imageUrl = user.profileImage
-      ? `http://localhost:3000/uploads/${user.profileImage}`
+      ? `https://blognest-backend-production.up.railway.app/uploads/${user.profileImage}`
       : "/default-user.png";
     setPreview(imageUrl);
   };
@@ -48,7 +48,7 @@ function UserProfile() {
     formData.append("image", selectedImage);
 
     try {
-      const response = await fetch("http://localhost:3000/api/users/upload-profile", {
+      const response = await fetch("https://blognest-backend-production.up.railway.app/api/users/upload-profile", {
         method: "POST",
         credentials: "include",
         body: formData,
@@ -90,7 +90,7 @@ function UserProfile() {
           <img
             src={
               user.profileImage
-                ? `http://localhost:3000/uploads/${user.profileImage}`
+                ? `https://blognest-backend-production.up.railway.app/uploads/${user.profileImage}`
                 : "/default-user.png"
             }
             alt="Profile"

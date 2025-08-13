@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import auth from '../api/auth'; // Assuming you have an API endpoint
 import { toast } from 'react-toastify';
 
-const ResetPassword = () => {
+const NewPassword = () => {
   const [newPassword, setNewPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const navigate = useNavigate();
@@ -73,4 +73,4 @@ const ResetPassword = () => {
   );
 };
 
-export default ResetPassword;
+export default NewPassword;
